@@ -39,7 +39,7 @@ namespace :spree_yandex_market do
     # пакуем в gz и делаем симлинк на ссылку файла yandex_market_last.gz
     `ln -sf "#{tfile.path}" "#{File.join(directory, "#{torgovaya_sistema}.xml")}"`
 
-    # Удаляем лишнии файлы
+    # Удаляем лишние файлы
     @config          = Spree::YandexMarket::Config
     @number_of_files = @config.preferred_number_of_files
 

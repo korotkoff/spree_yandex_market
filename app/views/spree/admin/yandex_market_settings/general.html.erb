@@ -37,8 +37,12 @@
         <%= t('configure_yandex_market.on_hand_wares') %>
       </label>
     </li>
-    
   </ol>
+
+  <label for="preferences_wares_active">
+    <%= t('configure_yandex_market.min_price') %>
+    <%= text_field_tag "preferences[min_price]", @config.min_price %>
+  </label>
 </fieldset>
 <fieldset>
   <legend><span><%= t('configure_yandex_market.local_delivery_cost') %></span></legend>

@@ -52,7 +52,7 @@ module Export
               end
             }
             xml.offers { # список товаров
-              products = Spree::Product.active.master_price_gte(0.001)
+              products = Spree::Product.active.master_price_gte(@config.min_price)
               products = products.on_hand if @config.preferred_wares == "on_hand"
               products = products.where(:export_to_yandex_market => true).group_by_products_id
               products.each do |product|

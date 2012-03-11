@@ -8,6 +8,7 @@ class Spree::YandexMarketConfiguration < Spree::Preferences::Configuration
   preference :local_delivery_cost, :string # стоимость доставки по своему региону, может быть произвольной текстовой фразой
   preference :sales_notes,     :string
   preference :only_backorder,  :boolean, :default => false
+  preference :min_price,       :float, :default => 0.01
 
   # wares property 
   preference :type_prefix,     :string, :default => "prefix"   # Группа товаров \ категория

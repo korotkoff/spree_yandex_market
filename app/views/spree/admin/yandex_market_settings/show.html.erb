@@ -17,8 +17,12 @@
     <td colspan=2><%= @config.preferred_currency %></td>
   </tr>
   <tr>
-    <th scope="row"><%= t 'configure_yandex_market.export_wares' %>:</th> 
+    <th scope="row"><%= t 'configure_yandex_market.export_wares' %>:</th>
     <td colspan=2><%= t("yandex_market_wares_#{@config.preferred_wares}") %></td>
+  </tr>
+  <tr>
+    <th scope="row"><%= t 'configure_yandex_market.min_price' %>:</th>
+    <td colspan=2><%= @config.min_price %></td>
   </tr>
   <tr>
     <th scope="row"><%= t 'configure_yandex_market.local_delivery_cost' %>:</th> 
